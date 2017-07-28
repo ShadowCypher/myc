@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-<html xmlns="http://www.w3.org/1999/xhtml">
 <meta charset="UTF-8"/>
 <link href="style.css" type="text/css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
@@ -24,11 +23,12 @@
 <div class="navbar">
 	<div class="fullmenu">
 	<ul>
+		
 		<a><img src="assets/logo.png" style="height: 60px; float: left; margin-left: 15px; margin-top: 10px; padding-right: 15px;"></a>
-		<li><a onclick="location.href='contact'">Contact</a></li>
-		<li><a onclick="location.href='about'">About</a></li>
-		<li><a onclick="location.href='donate'">Donate</a></li>
-		<li><a onclick="location.href='calendar'">Calendar</a></li>
+		<li><a class="op" onclick="location.href='contact'">Contact</a></li>
+		<li><a class="op" onclick="location.href='about'">About</a></li>
+		<li><a class="op" onclick="location.href='donate'">Donate</a></li>
+		<li><a class="op" onclick="location.href='calendar'">Calendar</a></li>
 	</ul>
 	</div>
 	<div class="mobile">
@@ -36,31 +36,68 @@
 				<object id="c1" class="centerline" ></object>
 			<object class="midline"></object>
 			<object id="c2" class="centerline2"></object>
-			<script>
+			<script type="text/javascript">
 		$(document).ready(function(){
     		$(".follow").hover(function(){
-        	$(this).css("background-color", "yellow");
+        	$(this).css("width", "80");
+			$(this).css("height","80")
         	}, function(){
-        	$(this).css("background-color", "pink");
+        	$(this).css("width", "60");
+			$(this).css("height","60");
+			$(this).css("background-color","red");
 			});
+			
+		
+				
+				
+		
+				
 		});
 	
 		</script>
+		<script type="text/javascript">
+$(document).ready(function() {
+    $.fn.myFunction = function() { 
+					 document.getElementById("mtext").innerHTML(5000) = "m";
+					}
+	
+    $(".mtext").click(function(){
+        $.fn.myFunction();
+    });
+});
+</script> 
 			<script>
 				
 $(document).ready(function(){
 
 
-    
-    $(".mobile").click(function(){
+    	$(".mobile").click(function(){
         $(".centerline").toggleClass("centerline4");
 		$(".centerline2").toggleClass("centerline24");
 		$(".midline").toggleClass("midline4");
 		$(".nav").toggle();
-    });
+    	});
 });
 </script>
-
+<script>
+	$(document).ready(function() {
+		var img = 1;
+		
+		$("#imgC").click(function() {
+			img += 1;
+			if (img == 5) {
+				img = 1;
+			}
+			$('#imgC').fadeTo(1000, 0.0, function()
+							  {
+    		document.getElementById('imgC').src='assets/img' + img +".png";	
+			}).delay(500).fadeTo(1500, 1.0);
+			
+			
+		});
+	});	
+		
+</script>
 	</div>
 </div>
 <div class="header">
@@ -80,7 +117,8 @@ $(document).ready(function(){
 	 	
 				</tr>
 			</table>
-	<h1 class="mtext">Muslim Youth Council</h1>
+				<h1 class="mtext" id="mtext" onMouseOver="type()">Muslim Youth Council</h1>
+
 </div>
 <div class="main">
 <h2 style="font-size: 34px;">Muslim Youth Council</h2>
@@ -88,30 +126,35 @@ $(document).ready(function(){
 	<table class="abt">
 		<tr>
 			<td class="td4" align="center">
-				<img class="abouti" src="assets/logo.png" style="width: 20vh; ">
-				<h2 style="font-size:18px;">Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text.</h2>
+				<img class="abouti" src="assets/staff.png" style="width: 40vh; ">
+				<h2 style="font-size:18px; margin: 5px;">Who are we? We are a team that strives to unite all MSA's in the Greater San Diego Region.</h2>
 			</td>
 			<td class="td4" align="center">
-				<img class="abouti" src="assets/logo.png" style="width: 20vh;">
-				<h2 style="font-size:18px;">Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text.</h2>
+				<img class="abouti" src="assets/calendar.png" style="width: 40vh; border-radius: 20px;">
+				<h2 style="font-size:18px; margin: 5px;">Be sure to stay up-to-date with our upcoming events! Check out our #Calendar tab!</h2>
 			</td>
 			<td class="td4" align="center">
-				<img class="abouti" src="assets/logo.png" style="width: 20vh;">
-				<h2 style="font-size:18px;">Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text.</h2>
+				<img class="abouti" src="assets/contact.png" style="width: 40vh; ">
+				<h2 style="font-size:18px; margin: 5px;">Our staff is working around the clock to set up a stable basis for MYC. Contact us <a style="color: blue;" onclick="location.href='contact'"><u>here</u></a>!</h2>
 			</td>
 			<td class="td4" align="center">
-				<img class="abouti" src="assets/logo.png" style="width: 20vh;">
-				<h2 style="font-size:18px;">Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text.</h2>
+				<img class="abouti" src="assets/donate.png" style="width: 40vh;">
+				<h2 style="font-size:18px; margin: 5px;">Ever feel like being that extra-nice someone? If so, don't hesitate in visiting our Donate page!</h2>
 				
 			</td>
 
 		</tr>
 
 	</table>
-	<object class="follow"></object>
+	<br/>
+	<br/>
+	<img src="assets/img1.png" id="imgC" width="100%">
 	<br/>
 	<br/>
 	<br/>
+	<br/>
+	<br/>
+
 	
 </div>
 

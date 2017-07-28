@@ -204,6 +204,7 @@ text-align: center;
 table {
 	background-color: #F7F7F7;
 	transition: 400ms ease all;
+	border-collapse: collapse;
 	
 }
 
@@ -224,11 +225,9 @@ h5 {
 }
 
 h2 {
-		text-align: center;
-		background-image: linear-gradient(to right, lightgreen, forestgreen);
-	    background-clip: text;
-	    color: transparent;
-	    -webkit-background-clip: text;
+			text-align: center;
+	    	color: black;
+		    word-break: normal;
 
 }
 
@@ -250,27 +249,68 @@ h2 {
 	align-content: center;
 	margin: 0 auto;
 	
+	
 }
 
 .abt {
 	
 }
-.abouti {
+/*.abouti {
 		transition: 800ms ease all;
-		border-radius: 33%;
-
+		border-radius: 43%;
 }
 
 .abouti:hover {
-	background-color: forestgreen;
+	background-color: white;
 	border-radius: 50%;
 	transition: 800ms ease all;
 	transform: rotate(-360deg);
-}
+	
+}*/
 
 .follow {
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
 	transition: 400ms ease all;
+	position: absolute;
+	background-color: red;
+	
 }
+
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+#imgC {
+	transition: 400ms ease all;
+	border-radius: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+tr { 
+  border: solid;
+  border-width: 5px 0;
+  border-color: white;
+}
+
+tr:first-child {
+  border-top: none;
+}
+tr:last-child {
+  border-bottom: none;
+}
+
+form {
+	text-align: center;
+}
+
+
+/* The typewriter cursor effect */
+

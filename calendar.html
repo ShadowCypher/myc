@@ -16,7 +16,7 @@
 <meta name="description" content="Welcome to Hypercharged's official website! Besides cars displayed on our channel, this is a gateway to one-on-one communication with the very creators of the channel!" />
 <head>
 <meta charset="UTF-8">
-<title>Muslim Youth Association - Home</title>
+<title>Muslim Youth Association - Calendar</title>
 </head>
 
 <body>
@@ -24,10 +24,10 @@
 	<div class="fullmenu">
 	<ul>
 		<a><img src="assets/logo.png" style="height: 60px; float: left; margin-left: 15px; margin-top: 10px; padding-right: 15px;"></a>
-		<li><a>Contact</a></li>
-		<li><a>About</a></li>
-		<li><a>Donate</a></li>
-		<li><a>Calendar</a></li>
+		<li><a class="op" onclick="location.href='contact'">Contact</a></li>
+		<li><a class="op" onclick="location.href='about'">About</a></li>
+		<li><a class="op" onclick="location.href='donate'">Donate</a></li>
+		<li><a class="op" onclick="location.href='calendar'">Calendar</a></li>
 	</ul>
 	</div>
 	<div class="mobile">
@@ -79,48 +79,23 @@ $(document).ready(function(){
 	 	
 				</tr>
 			</table>
-	<h1 class="mtext">Muslim Youth Council</h1>
+	<h1 class="mtext">Calendar</h1>
 </div>
 <div class="main">
-<h2 style="font-size: 34px;">Muslim Youth Council</h2>
+<h2 style="font-size: 34px;">Events:</h2>
 <div class="about">
-	<table class="abt">
-		<tr>
-			<td class="td4" align="center">
-				<img class="abouti" src="assets/logo.png" style="width: 20vh; ">
-				<h2 style="font-size:18px;">Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text.</h2>
-			</td>
-			<td class="td4" align="center">
-				<img class="abouti" src="assets/logo.png" style="width: 20vh;">
-				<h2 style="font-size:18px;">Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text.</h2>
-			</td>
-			<td class="td4" align="center">
-				<img class="abouti" src="assets/logo.png" style="width: 20vh;">
-				<h2 style="font-size:18px;">Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text.</h2>
-			</td>
-			<td class="td4" align="center">
-				<img class="abouti" src="assets/logo.png" style="width: 20vh;">
-				<h2 style="font-size:18px;">Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. Sample text.</h2>
-				
-			</td>
-
-		</tr>
-
-	</table>
-	<object class="follow"></object>
-	<br/>
-	<br/>
-	<br/>
+	<iframe src="https://calendar.google.com/calendar/embed?src=pderr03qvpt3qi8brv5s3mgihg%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no" style="text-align: center;"></iframe>
 	
 </div>
+	<br/>
 
 </div>
 <div class="footer">
 <a><img src="assets/logo.png" style="height: 60px;"></a>
-	<h5 style="padding-top: 5px;">Contact</h5>
-	<h5>About</h5>
-	<h5>Donate</h5>
-	<h5>Calendar</h5>
+	<a><h5 style="padding-top: 5px;" onclick="location.href='contact'">Contact</h5></a>
+	<a><h5 onclick="location.href='about'">About</h5></a>
+	<a><h5 onclick="location.href='donate'">Donate</h5></a>
+	<a><h5 onclick="location.href='calendar'">Calendar</h5></a>
 
 
 </div>
