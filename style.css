@@ -91,7 +91,10 @@ li a:hover {
 .header {
 	height: 700px;
 	width: 100vw;
-	background-image: linear-gradient(to right, lightgreen, forestgreen);
+	background: #36d1dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(left, #36d1dc, #5b86e5);
+  background: -o-linear-gradient(left, #36d1dc, #5b86e5);
+  background: linear-gradient(to right, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -134,7 +137,7 @@ h1 {
 	margin-bottom: 30px;
 	width: 50px;
 	height: 5px;
-	background-color: red;
+	background-color: blue;
 	z-index: 1;
 	transition: 400ms ease all;
 }
@@ -178,7 +181,7 @@ transform: rotate(45deg);
 	margin-top: 5px;
 	width: 50px;
 	height: 5px;
-	background-color: yellow;
+	background-color: limegreen;
 	margin-left: -58px;
 	
 }
@@ -191,7 +194,7 @@ transform: rotate(45deg);
 	width: 50px;
 	height: 5px;
 	margin-top: 35px;
-	background-color: darkorange;
+	background-color: deepskyblue;
 	margin-left: -58px;
 	
 	
@@ -259,20 +262,18 @@ h2 {
 	width: 20vw;
 	height: auto;
 	background-color: #F7F7F7;
-	align-content: center;
 	margin: 0 auto;
-	
+	vertical-align: top;
 	
 }
 
 .abt {
 	
 }
-/*.abouti {
-		transition: 800ms ease all;
-		border-radius: 43%;
+.abouti {
+		margin-top: 5px;
 }
-
+/*
 .abouti:hover {
 	background-color: white;
 	border-radius: 50%;
